@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3253DCF227956847009BE8C5 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3253DCF127956847009BE8C5 /* MyButton.m */; };
 		3265A1CE279420F5006237E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3265A1CD279420F5006237E3 /* AppDelegate.m */; };
 		3265A1D1279420F5006237E3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3265A1D0279420F5006237E3 /* SceneDelegate.m */; };
 		3265A1D4279420F5006237E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3265A1D3279420F5006237E3 /* ViewController.m */; };
@@ -19,8 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3253DCF027956847009BE8C5 /* MyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
-		3253DCF127956847009BE8C5 /* MyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		3265A1C9279420F5006237E3 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3265A1CC279420F5006237E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3265A1CD279420F5006237E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,8 +77,6 @@
 				3265A1DE279420FC006237E3 /* main.m */,
 				32AC7D8227942A9A00CEF1FD /* SecoundScreenViewController.h */,
 				32AC7D8327942A9A00CEF1FD /* SecoundScreenViewController.m */,
-				3253DCF027956847009BE8C5 /* MyButton.h */,
-				3253DCF127956847009BE8C5 /* MyButton.m */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -159,7 +154,6 @@
 				3265A1D4279420F5006237E3 /* ViewController.m in Sources */,
 				32AC7D8427942A9A00CEF1FD /* SecoundScreenViewController.m in Sources */,
 				3265A1CE279420F5006237E3 /* AppDelegate.m in Sources */,
-				3253DCF227956847009BE8C5 /* MyButton.m in Sources */,
 				3265A1DF279420FC006237E3 /* main.m in Sources */,
 				3265A1D1279420F5006237E3 /* SceneDelegate.m in Sources */,
 			);

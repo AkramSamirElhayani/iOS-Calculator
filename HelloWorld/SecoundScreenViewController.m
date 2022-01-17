@@ -8,6 +8,7 @@
 #import "SecoundScreenViewController.h"
 
 @interface SecoundScreenViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lable1;
 
 @end
 
@@ -16,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _lable1.text    =_text;
+    
 }
 
 /*
