@@ -6,8 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HomeScreenProtocol.h"
 
-@interface ViewController : UIViewController
+@interface ViewController <HomeScreenProtocol>: UIViewController
+{}
 
 
 @end

@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3253DCF32795906A009BE8C5 /* HomeScreenProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeScreenProtocol.h; sourceTree = "<group>"; };
 		3265A1C9279420F5006237E3 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3265A1CC279420F5006237E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3265A1CD279420F5006237E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 				3265A1DE279420FC006237E3 /* main.m */,
 				32AC7D8227942A9A00CEF1FD /* SecoundScreenViewController.h */,
 				32AC7D8327942A9A00CEF1FD /* SecoundScreenViewController.m */,
+				3253DCF32795906A009BE8C5 /* HomeScreenProtocol.h */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";

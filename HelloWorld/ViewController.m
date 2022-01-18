@@ -21,14 +21,12 @@
 @property (weak, nonatomic) IBOutlet UITextField *Textbox1;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *lable1;
-
+ 
 @end
 
 @implementation ViewController
 
-- (IBAction)clearC:(id)sender {
-    [_Textbox1 setText:@"0"];
-}
+ 
 - (IBAction)clearAC:(id)sender {
     [_Textbox1 setText:@"0"];
     opertator =@"";
@@ -96,7 +94,17 @@
     [_lable1 setText:[_lable1.text stringByAppendingString:@"="]];
     [_lable1 setText:[_lable1.text stringByAppendingString:[@(resultNum) stringValue]]];
     
+    
+    
+    [history addObject:_lable1.text];
+    printf("\n%s", [[history objectAtIndex:0] UTF8String] );
+    
+    
+    
+    
     [_Textbox1 setText:[@(resultNum) stringValue]];
+   
+    
     opertator = @"=";
     firstNum = resultNum;
     lastChar = @"=";
@@ -108,13 +116,13 @@
     if([opertator isEqual:@"+"])
     {
         _res = firstNum + secoundNum;
-    }else if([opertator isEqual:@"-"]){
+    }else if([opertator isEqual:@"−"]){
         _res = firstNum - secoundNum;
     }
-    else if([opertator isEqual:@"/"]){
+    else if([opertator isEqual:@"÷"]){
         _res = firstNum / secoundNum;
     }
-    else if([opertator isEqual:@"X"]){
+    else if([opertator isEqual:@"×"]){
         _res = firstNum * secoundNum;
     }
     return _res;
@@ -123,8 +131,7 @@
 {
     self = [super init];
     if (self) {
-        history = [NSMutableArray new];
-        opertator =@"";
+       
     }
     return self;
 }
@@ -135,16 +142,23 @@
                                                             style:UIBarButtonItemStylePlain target:self
                                                            action:@selector(editeBtnPressed)];
     [self.navigationItem setRightBarButtonItem:btn];
-    
-    
+    [self clearAC:nil];
+    history = [NSMutableArray new];
+    printf("\n Array initialized ");
     
 }
 
 -(void) editeBtnPressed {
     SecoundScreenViewController *viewe = [self.storyboard instantiateViewControllerWithIdentifier:@"historyVC"];
     viewe.text = _lable1.text;
+    [ viewe setHistory:history];
+    [ viewe setHomeScreenP:self];
+ 
     [self.navigationController pushViewController:viewe animated:YES];
     
     
+}
+-(void)clear{
+    printf("Clear Clicked ");
 }
 @end
